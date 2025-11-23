@@ -1,0 +1,20 @@
+{
+    "aux_input" : "../unittest/ops/place_io_unittest/simple/simple.aux",
+    "gpu" : 0,
+    "num_bins_x" : 32,
+    "num_bins_y" : 32,
+    "global_place_stages" : [
+        {
+            "num_bins_x" : 32,
+            "num_bins_y" : 32,
+            "iteration" : 100,
+            "learning_rate" : 0.01,
+            "wirelength" : "weighted_average",
+            "optimizer" : "nesterov"
+        }
+    ],
+    "target_density" : 1.0,
+    "density_weight" : 8e-5,
+    "result_dir" : "results",
+    "num_threads" : 4
+}

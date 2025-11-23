@@ -13,7 +13,7 @@ import time
 import numpy as np
 import torch
 import logging
-import Params
+from . import Params
 import dreamplace
 import dreamplace.ops.place_io.place_io as place_io
 import dreamplace.ops.fence_region.fence_region as fence_region

@@ -1,15 +1,33 @@
-build
-lib
-obj
-*.o
-*.a
+# Python
+__pycache__/
 *.pyc
-results
-log
-dreamplace/version.py
-dist
-dreamplace.egg-info
-install
-*.so
-.DS_Store
-.vscode/*
+dreamplace_env/
+
+# IDE
+.idea/
+.vscode/
+
+# 备份
+*.backup*
+ops.backup/
+backup_*/
+
+# 构建
+cmake-build-debug/
+build/
+install/
+
+# 子模块
+thirdparty/Limbo
+thirdparty/OpenTimer
+thirdparty/pybind11
+
+# 脚本
+*.sh
+
+# 临时文件
+*.log
+*.tmp
+
+# 保留编译好的 .so
+!dreamplace/ops/**/*.so

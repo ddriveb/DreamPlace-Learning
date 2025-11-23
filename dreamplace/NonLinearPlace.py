@@ -21,10 +21,10 @@ if sys.version_info[0] < 3:
     import cPickle as pickle
 else:
     import _pickle as pickle
-import BasicPlace
-import PlaceObj
-import NesterovAcceleratedGradientOptimizer
-import EvalMetrics
+from . import BasicPlace
+from . import PlaceObj
+from . import NesterovAcceleratedGradientOptimizer
+from . import EvalMetrics
 import pdb
 import dreamplace.ops.fence_region.fence_region as fence_region
 
