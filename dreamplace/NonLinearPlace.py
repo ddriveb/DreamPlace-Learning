@@ -169,7 +169,10 @@ class NonLinearPlace(BasicPlace.BasicPlace):
                             lr=0,
                             obj_and_grad_fn=model.obj_and_grad_fn,
                             constraint_fn=self.op_collections.move_boundary_op,
-                            use_bb = params.use_bb
+                            use_bb = params.use_bb,
+                            step_size_strategy=getattr(params,'step_size_strategy','bb'),
+                            backtrack_epsilon=getattr(params,'backtrack_epsilon',0.95),
+                            max_backtrack=getattr(params,'max_backtrack',10)
                         )
                     # 2. The torch_optimizer package
                     elif optimizer_name.lower() == "aggmo":

@@ -318,8 +318,5 @@
     "description": "vertical halo around movable macros",
     "default": 0
     },
-"step_size_strategy" : {
-    "default" : "bb",
-    "description" : "Step size strategy for Nesterov optimizer: 'nobb', 'bb', or 'eplace'"
 }
 }
