@@ -290,6 +290,18 @@
     "description" : "whether use bb step", 
     "default" : 0
     }, 
+"step_size_strategy" : {
+    "description" : "step choice strategy",
+    "default" : "bb"
+},
+"backtrack_epsilon" :{
+    "description" : "params of new approach",
+    "default" : 0.95
+},
+"max_backtrack" : {
+    "description" : "",
+    "default" : 10
+},
 "macro_place_flag" : {
         "description" : "whether enable macro placement", 
         "default" : 0
@@ -305,5 +317,9 @@
 "macro_halo_y": {
     "description": "vertical halo around movable macros",
     "default": 0
-    }
+    },
+"step_size_strategy" : {
+    "default" : "bb",
+    "description" : "Step size strategy for Nesterov optimizer: 'nobb', 'bb', or 'eplace'"
+}
 }
